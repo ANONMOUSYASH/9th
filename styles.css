@@ -1,0 +1,77 @@
+:root {
+  --primary: #3b82f6;
+  --bg: #eff6ff;
+  --text: #111827;
+  --muted: #6b7280;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+nav a {
+  margin-left: 16px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  color: var(--primary);
+}
+.hero {
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+  padding: 48px 0;
+  margin-bottom: 8px;
+}
+.section {
+  padding: 24px 0;
+  border-top: 1px solid #e5e7eb;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 24px 0;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 24px;
+}
+/* Variation: dashed article cards, stronger separators, tidy header line */
+.site-header{border-bottom:2px solid #cbd5e1}
+.section{border-top:2px solid #cbd5e1}
+.card{border-style:dashed}
